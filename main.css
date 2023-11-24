@@ -1,0 +1,123 @@
+body{
+    background: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0px;
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Phudu', cursive;
+    font-weight: 100;
+}
+
+.menu_lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 15%;
+    background-color: #151515;
+    border-right: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logodiv{
+    display: grid;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+}
+
+li{
+    padding-top: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Phudu', cursive;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.atualizacoes {
+    position: fixed;
+    width: 81%;
+    height: 100vh;
+    background-color: #151515;
+}
+
+.atualizacoes h1 {
+    text-align: center;
+    padding-top: 2%;
+    margin: 0;
+}
+
+.divatualizacoes{
+    padding-left: 17%;
+    padding-top: 2%;
+}
+
+.profile{
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+}
+
+.message-container{
+    font-size: 10px;
+}
+.user{
+    font-size: 10px;
+    color: red;
+}
+.date{
+    font-size: 10px;
+}
+.content{
+    font-size: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.message {
+    /* ... (seus estilos existentes) */
+    word-wrap: break-word;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+}
+.message-container {
+    font-size: 10px;
+    max-height: 63vh;
+    overflow-y: auto;
+}
+.message-container::-webkit-scrollbar {
+width: 6px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+}
+
+.user-info{
+    text-align: center;
+}
+
+.user-admin {
+    color: red;
+    font-weight: bold;
+}
+.user-member {
+    color: rgb(103, 103, 252);
+    font-weight: bold;
+}
