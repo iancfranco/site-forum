@@ -22,14 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
             $ip = getenv('HTTP_CLIENT_IP') ?: getenv('HTTP_X_FORWARDED_FOR') ?: getenv('HTTP_X_FORWARDED') ?: getenv('HTTP_FORWARDED_FOR') ?: getenv('HTTP_FORWARDED') ?: getenv('REMOTE_ADDR');
             $filePath = "cadastros.txt";
-            
-            if (file_exists($filePath)) {
-                $fileContents = file_get_contents($filePath);
-                if (strpos($fileContents, "$ip") !== false) {
-                    echo "Já existe um cadastro associado a este IP.";
-                    exit;
-                }
-            }
         
             if (file_exists($filePath)) {
                 $fileContents = file_get_contents($filePath);
